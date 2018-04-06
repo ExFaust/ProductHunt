@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProductHunt</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="connection">Соединение..</string>
+    <string name="connection_message">Пожалуйста, подождите.</string>
+    <string name="connection_error">Произошла ошибка!</string>
+    <string name="button_product_title">Get it!</string>
+    <string name="tech_category">Tech</string>
+
+
+</resources>
