@@ -12,6 +12,7 @@ import rx.Observable;
 
 public class DefaultRequest implements DefaultRequestInterface {
 
+
     @NonNull
     @Override
     public Observable<Root> tech() {

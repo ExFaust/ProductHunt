@@ -22,7 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".screen.ProductActivity"></activity>
+        <activity android:name=".screen.ProductActivity">
+
+        </activity>
     </application>
 
 </manifest>
