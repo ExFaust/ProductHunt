@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 27
@@ -22,11 +24,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    compileOptions {
-        targetCompatibility 1.8
-        sourceCompatibility 1.8
-    }
 }
 
 dependencies {
@@ -49,6 +46,9 @@ dependencies {
 
     implementation 'com.google.dagger:dagger-android:2.15'
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.15'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+    kapt 'com.google.dagger:dagger-compiler:2.15'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     implementation project(path: ':domain')
 }

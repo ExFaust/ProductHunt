@@ -15,14 +15,14 @@
             android:padding="@dimen/margin_small">
 
             <ProgressBar
-                android:id="@+id/item_placeholder"
+                android:id="@+id/itemPlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:background="@color/lightGray" />
 
             <ImageView
-                android:id="@+id/item_screenshot"
+                android:id="@+id/itemScreenshot"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/large_image_height"
                 android:scaleType="fitStart" />
@@ -30,7 +30,7 @@
         </FrameLayout>
 
         <TextView
-            android:id="@+id/item_name"
+            android:id="@+id/itemName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
@@ -38,7 +38,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/item_tagline"
+            android:id="@+id/itemTagline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
@@ -58,7 +58,7 @@
                 android:src="@drawable/ic_arrow_drop_up_black_24dp" />
 
             <TextView
-                android:id="@+id/item_votes"
+                android:id="@+id/itemVotes"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -66,7 +66,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button_redirect"
+            android:id="@+id/buttonRedirect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_product_title" />
