@@ -1,10 +1,10 @@
 package com.somename.data.network
 
 
-import com.somename.data.BuildConfig
 import com.somename.data.сontent.RootEntity
 import com.somename.data.сontent.RootProductEntity
 import com.somename.data.сontent.RootTopicsEntity
+import com.somename.domain.BuildConfig
 
 import io.reactivex.Observable
 import retrofit2.http.GET

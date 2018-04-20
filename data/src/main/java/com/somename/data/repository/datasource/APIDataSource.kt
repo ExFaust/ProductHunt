@@ -7,7 +7,7 @@ import com.somename.data.сontent.RootTopicsEntity
 
 import io.reactivex.Observable
 
-class MoviesAPIDataSource(private val mLocalApi: LocalApi) : DataSource {
+class APIDataSource(private val mLocalApi: LocalApi) : DataSource {
 
 
     override val techCategoryEntity: Observable<RootEntity>
@@ -16,7 +16,7 @@ class MoviesAPIDataSource(private val mLocalApi: LocalApi) : DataSource {
     override val trendingTopicsEntity: Observable<RootTopicsEntity>
         get() = mLocalApi.trendingTopics
 
-    override fun getChoosenTopicEntity(topicId: Int): Observable<RootEntity> {
+    override fun getChosenTopicEntity(topicId: Int): Observable<RootEntity> {
         return mLocalApi.getChosenTopic(topicId)
     }
 

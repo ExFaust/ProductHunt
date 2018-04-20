@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-
         navigationView.setNavigationItemSelectedListener(this)
 
         mLoadingView = LoadingDialog.view(supportFragmentManager)
@@ -90,9 +89,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun updateTopics(rootTopicsViewModel: RootTopicsViewModel) {
         navigationView.menu.clear()
-        for (topicsViewModel in rootTopicsViewModel.topics!!) {
-            navigationView.menu.add(0, topicsViewModel.id, Menu.NONE, topicsViewModel.name)
-        }
+        rootTopicsViewModel.topics?.forEach { topicsViewModel -> navigationView.menu.add(0, topicsViewModel.id, Menu.NONE, topicsViewModel.name) }
     }
 
     override fun showError() {

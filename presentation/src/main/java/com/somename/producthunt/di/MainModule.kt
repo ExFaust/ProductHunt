@@ -1,10 +1,10 @@
 package com.somename.producthunt.di
 
 import android.content.Context
-
 import com.somename.data.network.LocalApi
 import com.somename.data.network.LoggingInterceptor
-import com.somename.data.repository.MovieNetworkRepository
+import com.somename.data.repository.ProductHuntNetworkRepository
+
 import com.somename.domain.NetworkRepository
 import com.somename.producthunt.AppDelegate
 import com.somename.producthunt.BuildConfig
@@ -33,8 +33,8 @@ class MainModule(private val mAppDelegate: AppDelegate) {
 
     @Provides
     @Singleton
-    internal fun provideRepository(movieNetworkRepository: MovieNetworkRepository): NetworkRepository {
-        return movieNetworkRepository
+    internal fun provideRepository(productHuntNetworkRepository: ProductHuntNetworkRepository): NetworkRepository {
+        return productHuntNetworkRepository
     }
 
     @Provides

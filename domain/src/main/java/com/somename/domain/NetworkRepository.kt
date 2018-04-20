@@ -13,7 +13,7 @@ interface NetworkRepository {
 
     val trendingTopics: Observable<RootTopics>
 
-    fun getChoosenTopic(topicId: Int): Observable<Root>
+    fun getChosenTopic(topicId: Int): Observable<Root>
 
     fun getProduct(id: String): Observable<RootProduct>
 

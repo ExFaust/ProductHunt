@@ -6,10 +6,10 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class MoviesAPIDataSourceFactory @Inject
+class APIDataSourceFactory @Inject
 constructor(private val mLocalAPI: LocalApi) {
 
     fun createDataSource(): DataSource {
-        return MoviesAPIDataSource(mLocalAPI)
+        return APIDataSource(mLocalAPI)
     }
 }

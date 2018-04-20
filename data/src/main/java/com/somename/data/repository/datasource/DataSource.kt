@@ -12,7 +12,7 @@ interface DataSource {
 
     val trendingTopicsEntity: Observable<RootTopicsEntity>
 
-    fun getChoosenTopicEntity(topicId: Int): Observable<RootEntity>
+    fun getChosenTopicEntity(topicId: Int): Observable<RootEntity>
 
     fun getProductEntity(id: String): Observable<RootProductEntity>
 

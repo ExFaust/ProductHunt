@@ -1,6 +1,6 @@
 package com.somename.data.network
 
-import com.somename.data.BuildConfig
+import com.somename.domain.BuildConfig
 
 import java.io.IOException
 

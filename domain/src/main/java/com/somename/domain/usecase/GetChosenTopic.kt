@@ -17,7 +17,7 @@ constructor(@Named("executor_thread") executorThread: Scheduler,
     private var mTopicId: Int = 0
 
     public override fun createObservableUseCase(): Observable<Root> {
-        return this.mNetworkRepository.getChoosenTopic(mTopicId)
+        return this.mNetworkRepository.getChosenTopic(mTopicId)
     }
 
     fun setTopicId(topicId: Int) {

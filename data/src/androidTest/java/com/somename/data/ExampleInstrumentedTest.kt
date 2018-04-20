@@ -1,4 +1,4 @@
-package com.somename.data
+package com.somename.domain
 
 import android.content.Context
 import android.support.test.InstrumentationRegistry
